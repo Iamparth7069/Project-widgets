@@ -28,7 +28,7 @@ class home extends StatefulWidget {
 class _homeState extends State<home> {
   Future<List<Album>> fetchObjects() async {
     final response = await get(Uri.parse('https://jsonplaceholder.typicode.com/albums'));
-    if (response.statusCode == 200) {
+    if (response.statusCode == 203) {
 
 
       final List<dynamic> data = json.decode(response.body);
